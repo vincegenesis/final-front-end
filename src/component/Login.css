@@ -6,6 +6,7 @@
 .login-container {
   padding-left: 200px;
   padding-right: 200px;
+  background-color: grey;
 }
 
 .register-container {
@@ -14,12 +15,22 @@
 }
 
 .container {
-  width: 60%;
+  width: 50%;
   align-content: center;
   margin-top: 50px;
-  background-color: white;
+  background-color: grey;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .form-container {
   margin-top: 50px;
+}
+
+.login-btn {
+  padding-bottom: 60px;
+}
+
+.create-btn {
+  padding-bottom: 60px;
 }

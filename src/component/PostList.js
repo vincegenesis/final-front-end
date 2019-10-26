@@ -5,7 +5,6 @@ import UpdateModal from "./modal/UpdateModal";
 import DashBoardNav from "./DashBoardNav";
 import DeletePost from "./modal/DeletePost";
 import PostListHeader from "./PostListHeader";
-import "./Nav.css";
 
 class PostList extends Component {
   constructor(props) {
@@ -42,7 +41,7 @@ class PostList extends Component {
         {/* ownerId : {this.props.location.state.data} */}
 
         {posts.reverse().map(post => (
-          <div className="container" key={post._id}>
+          <div className="base-card-container" key={post._id}>
             <Card>
               <div className="card-container">
                 <Card.Img variant="top" src={post.imageUrl} alt="new" />

@@ -10,6 +10,7 @@ import {
   Form
 } from "reactstrap";
 import axios from "axios";
+import "./modal.css";
 
 const ModalExample = props => {
   const [title, setTitle] = useState("");
@@ -41,11 +42,12 @@ const ModalExample = props => {
     <div className="modal-container">
       <Form onSubmit={submitHandler}>
         <Button color="primary" size="lg" onClick={toggle}>
-          Create Post
+          <h5>Create Post</h5>
         </Button>
         <Modal isOpen={modal} backdropTransition={{ timeout: 1300 }} size="lg">
           <ModalBody>
             <Label for="exampleText">{props.postId}</Label>
+            Enter post information below
             <InputGroup size="lg">
               <Input
                 type="text"

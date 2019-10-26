@@ -38,8 +38,9 @@ export class RegisterForm extends Component {
     const { username, email, password } = this.state;
     return (
       <div className="container">
+        <Nav></Nav>
+
         <div className="register-container">
-          <Nav></Nav>
           <img
             src={require("./journal123.png")}
             style={{ width: "100px", height: "100px" }}
@@ -81,10 +82,11 @@ export class RegisterForm extends Component {
                   onChange={this.onChangeHandler}
                 />
               </Form.Group>
-
-              <Button variant="primary" type="submit">
-                Create Account
-              </Button>
+              <div className="create-btn">
+                <Button variant="primary" type="submit">
+                  Create Account
+                </Button>
+              </div>
             </Form>
           </div>
         </div>

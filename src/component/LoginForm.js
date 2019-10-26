@@ -46,8 +46,8 @@ class LoginForm extends Component {
     const { username, password } = this.state;
     return (
       <div className="container">
+        <Nav></Nav>
         <div className="login-container">
-          <Nav></Nav>
           <img
             src={require("./journal123.png")}
             style={{ width: "100px", height: "100px" }}
@@ -79,10 +79,11 @@ class LoginForm extends Component {
                   onChange={this.onChangeHandler}
                 />
               </Form.Group>
-
-              <Button variant="primary" type="submit">
-                Login
-              </Button>
+              <div className="login-btn">
+                <Button variant="primary" type="submit">
+                  Login
+                </Button>
+              </div>
             </Form>
           </div>
         </div>
