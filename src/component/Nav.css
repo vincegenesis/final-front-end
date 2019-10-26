@@ -1,0 +1,54 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 7vh;
+  background-color: rgb(73, 79, 82);
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 100px;
+}
+
+.header-container {
+  min-height: 10vh;
+}
+
+.button-create {
+  float: right;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.label {
+  float: left;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.updateBtn {
+  float: left;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+
+.deleteBtn {
+  float: right;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+
+.post-list-container {
+  background-color: white;
+}
